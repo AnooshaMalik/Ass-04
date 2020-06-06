@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+body {
+    background-color: var(--primary);
+    /* color: var(--shadow); */
+    overflow-x: hidden;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-left: 35px;
+    /* margin: auto; */
+}
+
+.man {
+    width: 100vw;
+    height: 120vh;
+    background-image: url("./images/pexels-photo-1254502.jpeg");
+    background-size: 100% 100% cover;
+    background-repeat: no-repeat;
+    color: #254E58;
+}
+
+.ham {
+    font-size: 50px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+.ham:hover {
+    cursor: pointer;
+    color: #3AA4A9;
+}
+
+.btn {
+    padding: 7px;
+    background-color: transparent;
+    border: 2px solid #3AA4A9;
+    color: #254E58;
+    margin-left: 110px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #3AA4A9;
+    color: var(--primary);
+    transition: 0.5s;
+}
+
+
+/*                                    service                           */
+
+.services {
+    padding-bottom: 100px;
+}
+
+.head {
+    padding-top: 160px;
+    padding-left: 110px;
+    letter-spacing: 2px;
+}
+
+.serviceCol {
+    /* padding: 120px; */
+    /* border: 1px solid; */
+    margin-right: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    /* border-radius: 6px; */
+    border-right: 2px solid #254E58;
+}
+
+.three {
+    border-right: 0px solid #254E58;
+}
+
+.serviceCol:hover {
+    border-right: none;
+    border-radius: 6px;
+}
+
+.icon {
+    margin-bottom: 10px;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    background-color: #254E58;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+    font-family: 700;
+    transition: 0.5s;
+}
+
+.services .myrow .serviceCol:nth-child(1) .icon {
+    box-shadow: 0 0 0 0 #e91e63;
+    background-color: #254E58;
+}
+
+.services .myrow .serviceCol:nth-child(1):hover {
+    /* box-shadow: 0 0 0 70px #e91e63; */
+    background-color: #3AA4A9;
+    color: #254E58;
+    box-shadow: 5px 5px 5px rgb(55, 142, 146);
+}
+
+.services .myrow .serviceCol:nth-child(1):hover .icon {
+    box-shadow: 0 0 0 0 none;
+    background-color: #3AA4A9;
+    color: #254E58;
+}
+
+.services .myrow .serviceCol:nth-child(2):hover {
+    /* box-shadow: 0 0 0 70px #e91e63; */
+    background-color: #3AA4A9;
+    color: #254E58;
+    box-shadow: 5px 5px 5px rgb(55, 142, 146);
+}
+
+.services .myrow .serviceCol:nth-child(2):hover .icon {
+    box-shadow: 0 0 0 0 none;
+    background-color: #3AA4A9;
+    color: #254E58;
+}
+
+.services .myrow .serviceCol:nth-child(3):hover {
+    /* box-shadow: 0 0 0 70px #e91e63; */
+    background-color: #3AA4A9;
+    color: #254E58;
+    box-shadow: 5px 5px 5px rgb(55, 142, 146);
+}
+
+.services .myrow .serviceCol:nth-child(3):hover .icon {
+    box-shadow: 0 0 0 0 none;
+    background-color: #3AA4A9;
+    color: #254E58;
+}
+
+
+/*                                                 Team                              */
+
+.Team {
+    /* background-color: #d1d8e0; */
+}
+
+.gallery img {
+    height: 300px;
+    width: 300px;
+    box-shadow: 5px 5px 20px black;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    /* margin-right: 10px; */
+}
+
+.gallery img:hover {
+    opacity: 0.5;
+}
+
+.testimonials {
+    padding-bottom: 70px;
+}
+
+.testicol {
+    /* padding: 200px; */
+    /* border: 1px solid; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.line {
+    border-right: 2px solid #254E58;
+}
+
+.review {
+    font-family: sans-serif;
+}
+
+.circle {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #254E58;
+    margin-bottom: 20px;
+}
+
+.Footer {
+    background-color: #254E58;
+    color: var(--primary);
+    padding: 30px;
+}
+
+.footerCol {}
+
+.space {
+    margin-left: 90px;
+    margin-bottom: 30px;
+}
+
+
+/* ------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1000px) {
+    .man {
+        /* width: 50vw;
+        height: 60vh; */
+        /* transform: translateX(-50px); */
+    }
+    .man h1 {
+        /* font-size: 25px;
+        color: red; */
+    }
+    .serviceCol {
+        border-right: 0px solid #254E58;
+    }
+    .ham {
+        right: 10%;
+    }
+}
